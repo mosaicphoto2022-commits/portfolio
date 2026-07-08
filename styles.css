@@ -1325,7 +1325,7 @@ body.dark-theme .belt-step {
 .belt-yellow { background: #ffe83f; box-shadow: 0 4px 10px rgba(255, 232, 63, 0.3); }
 .belt-lightblue { background: #a2d2ff; }
 .belt-green { background: #99e2b4; }
-.belt-bluish-purple{ background: #7f86ff; }
+.belt-bluish-purple{ background: #5c7aff; }
 .belt-brown { background: #8b5a2b; }
 .belt-black { background: #212121; }
 .belt-black::after { display: block; background: #ffe83f; } /* Yellow stripe on black belt */
