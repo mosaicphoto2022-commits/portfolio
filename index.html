@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang web giới thiệu bản thân của Nguyễn Hạnh Chi - Học sinh trường THCS Tân Định, đam mê làm bánh và võ thuật Karatedo.">
+    <meta name="keywords" content="Nguyễn Hạnh Chi, Hạnh Chi, THCS Tân Định, Karatedo, Làm bánh, Donut">
+    <meta name="author" content="Nguyễn Hạnh Chi">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nguyễn Hạnh Chi | Trang Web Cá Nhân">
+    <meta property="og:description" content="Chào mừng bạn đến với thế giới nhỏ của Nguyễn Hạnh Chi - Đam mê làm bánh, võ thuật Karatedo và học sinh THCS Tân Định.">
+    <meta property="og:image" content="assets/avatar.jpg">
+
+    <title>Nguyễn Hạnh Chi | Trang Web Cá Nhân</title>
+
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Development CSS Link -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons for premium modern look -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="light-theme">
+    <!-- Mesh Background Gradient Blur -->
+    <div class="mesh-bg" id="mesh-background"></div>
+
+    <!-- Header Navigation -->
+    <header class="header" id="site-header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="logo-brand">
+                <span class="logo-dot"></span>HanhChi.me
+            </a>
+            
+            <!-- Desktop Nav Links -->
+            <nav class="nav-menu" id="desktop-nav">
+                <a href="#hero" class="nav-link active" id="link-hero">Trang chủ</a>
+                <a href="#about" class="nav-link" id="link-about">Giới thiệu</a>
+                <a href="#projects" class="nav-link" id="link-projects">Sở thích</a>
+                <a href="#contact" class="nav-link" id="link-contact">Liên hệ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-btn" id="theme-toggle-btn" aria-label="Toggle dark mode">
+                    <i data-lucide="moon" class="icon-moon"></i>
+                    <i data-lucide="sun" class="icon-sun"></i>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="logo"><span class="logo-dot"></span>HanhChi.me</span>
+            <button class="close-drawer-btn" id="close-drawer-btn" aria-label="Close menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#hero" class="drawer-link" id="mob-link-hero">Trang chủ</a>
+            <a href="#about" class="drawer-link" id="mob-link-about">Giới thiệu</a>
+            <a href="#projects" class="drawer-link" id="mob-link-projects">Sở thích</a>
+            <a href="#contact" class="drawer-link" id="mob-link-contact">Liên hệ</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-pastel" id="hero-badge">👋 Xin chào, mình là</div>
+                    <h1 class="hero-title" id="hero-main-title">
+                        Nguyễn Hạnh Chi <br>
+                        <span class="gradient-text">Học sinh THCS Tân Định</span>
+                    </h1>
+                    <p class="hero-subtitle" id="hero-desc-text">
+                        Mình là một cô bạn 13 tuổi (sinh ngày 28/11/2013). Chào mừng mọi người đến với trang web cá nhân nhỏ xinh của mình, nơi mình chia sẻ những sở thích thú vị hàng ngày!
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" id="btn-view-work">
+                            Xem sở thích của mình <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="btn-go-contact">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="avatar-wrapper" id="avatar-frame">
+                        <img src="assets/avatar.jpg" alt="Nguyễn Hạnh Chi Avatar" class="avatar-img" id="avatar-image">
+                        <div class="avatar-glow"></div>
+                        <!-- Floating badges for premium aesthetic -->
+                        <div class="floating-badge badge-1">
+                            <i data-lucide="cookie" class="icon-pastel-green"></i> <span>Làm bánh</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i data-lucide="shield" class="icon-pastel-purple"></i> <span>Karatedo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" id="scroll-indicator-arrow">
+                <span class="mouse-wheel"></span>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section section" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Khám phá</span>
+                    <h2 class="section-title">Về Bản Thân Mình</h2>
+                    <p class="section-subtitle">Một chút thông tin thú vị để chúng mình làm quen nhé.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card intro-card card-glass fade-in-up">
+                        <div class="card-icon-wrapper purple-bg">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <h3>Hạnh Chi là ai?</h3>
+                        <p>
+                            Mình sinh ngày 28/11/2013, năm nay mình 13 tuổi. Hiện tại mình đang là học sinh tại trường THCS Tân Định. Mình là một người năng động, thích tham gia các hoạt động tập thể và đam mê tự tay tạo nên các món bánh ngọt ngon lành.
+                        </p>
+                        <div class="personal-highlights">
+                            <p>🍩 <strong>Món ăn yêu thích:</strong> Bánh Donut ngọt ngào</p>
+                            <p>🥋 <strong>Thể thao:</strong> Võ thuật Karatedo</p>
+                            <p>🍰 <strong>Sở thích:</strong> Tự làm các loại bánh ngọt</p>
+                        </div>
+                    </div>
+
+                    <div class="about-card education-card card-glass fade-in-up">
+                        <div class="card-icon-wrapper green-bg">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <h3>Trường học & Thể thao</h3>
+                        <ul class="timeline">
+                            <li>
+                                <span class="time-duration">Hiện tại</span>
+                                <h4>Trường THCS Tân Định</h4>
+                                <p>Học tập chăm chỉ, tham gia các hoạt động trường lớp cùng bạn bè.</p>
+                            </li>
+                            <li>
+                                <span class="time-duration">Môn thể thao yêu thích</span>
+                                <h4>Võ thuật Karatedo</h4>
+                                <p>Tập luyện Karatedo giúp mình rèn luyện sức khỏe, lòng tự tin và tính kỷ luật cực kỳ tốt.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Karatedo Belts Journey Section -->
+                <div class="belt-journey-card card-glass fade-in-up" id="belt-journey">
+                    <h3>🥋 Hành trình thăng đai Karatedo của mình</h3>
+                    <p class="belt-journey-subtitle">Cột mốc tập luyện và mục tiêu võ thuật của mình</p>
+                    <div class="belts-container">
+                        <div class="belt-step achieved">
+                            <div class="belt-strip belt-white"></div>
+                            <span class="belt-name">Đai Trắng</span>
+                            <span class="belt-badge-status">Hoàn thành</span>
+                        </div>
+                        <div class="belt-step current">
+                            <div class="belt-strip belt-yellow"></div>
+                            <span class="belt-name">Đai Vàng</span>
+                            <span class="belt-badge-status">Hiện tại</span>
+                        </div>
+                        <div class="belt-step locked">
+                            <div class="belt-strip belt-orange"></div>
+                            <span class="belt-name">Đai Cam</span>
+                            <span class="belt-badge-status">Mục tiêu</span>
+                        </div>
+                        <div class="belt-step locked">
+                            <div class="belt-strip belt-green"></div>
+                            <span class="belt-name">Đai Xanh lá</span>
+                            <span class="belt-badge-status">Mục tiêu</span>
+                        </div>
+                        <div class="belt-step locked">
+                            <div class="belt-strip belt-blue"></div>
+                            <span class="belt-name">Đai Xanh dương</span>
+                            <span class="belt-badge-status">Mục tiêu</span>
+                        </div>
+                        <div class="belt-step locked">
+                            <div class="belt-strip belt-brown"></div>
+                            <span class="belt-name">Đai Nâu</span>
+                            <span class="belt-badge-status">Mục tiêu</span>
+                        </div>
+                        <div class="belt-step locked">
+                            <div class="belt-strip belt-black"></div>
+                            <span class="belt-name">Đai Đen</span>
+                            <span class="belt-badge-status">Mục tiêu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Sub-section (Adapted to Fav Foods & Skills) -->
+                <div class="skills-wrapper">
+                    <h3 class="skills-title text-center">Món yêu thích & Điểm mạnh</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tag" id="skill-donut">
+                            <i data-lucide="cake" class="icon-html"></i> Bánh Donut ngọt ngào 🍩
+                        </div>
+                        <div class="skill-tag" id="skill-baking">
+                            <i data-lucide="cookie" class="icon-js"></i> Kỹ năng làm bánh cực ngon
+                        </div>
+                        <div class="skill-tag" id="skill-karate">
+                            <i data-lucide="swords" class="icon-react"></i> Tự vệ võ Karatedo
+                        </div>
+                        <div class="skill-tag" id="skill-school">
+                            <i data-lucide="book-open" class="icon-node"></i> Học sinh THCS Tân Định
+                        </div>
+                        <div class="skill-tag" id="skill-team">
+                            <i data-lucide="users" class="icon-db"></i> Thân thiện, hòa đồng
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section (Adapted to Interests Gallery) -->
+        <section class="projects-section section" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Thế giới của mình</span>
+                    <h2 class="section-title">Góc Sở Thích & Hoạt Động</h2>
+                    <p class="section-subtitle">Nơi lưu giữ những niềm vui nhỏ bé của mình mỗi ngày.</p>
+                </div>
+
+                <!-- Project Filters -->
+                <div class="project-filters" id="project-filters-container">
+                    <button class="filter-btn active" data-filter="all" id="filter-btn-all">Tất cả</button>
+                    <button class="filter-btn" data-filter="web" id="filter-btn-web">Ẩm thực</button>
+                    <button class="filter-btn" data-filter="design" id="filter-btn-design">Vận động</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project Card 1 -->
+                    <article class="project-card card-glass fade-in-up" data-category="web" id="project-1">
+                        <div class="project-image-wrapper">
+                            <div class="project-visual-placeholder gradient-pastel-1">
+                                <i data-lucide="cake" class="project-visual-icon"></i>
+                            </div>
+                            <span class="project-badge">Làm bánh ngọt</span>
+                        </div>
+                        <div class="project-details">
+                            <h3>Bánh Donut tự tay mình làm</h3>
+                            <p>Donut là món ăn yêu thích nhất của mình! Mình rất thích tự tay nhào bột, nướng và trang trí những chiếc donut rực rỡ sắc màu với kẹo cốm ngọt ngào.</p>
+                            <div class="project-tags">
+                                <span>Làm bánh</span>
+                                <span>Donuts</span>
+                                <span>Ẩm thực</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card card-glass fade-in-up" data-category="design" id="project-2">
+                        <div class="project-image-wrapper">
+                            <div class="project-visual-placeholder gradient-pastel-2">
+                                <i data-lucide="shield" class="project-visual-icon"></i>
+                            </div>
+                            <span class="project-badge">Võ thuật</span>
+                        </div>
+                        <div class="project-details">
+                            <h3>Karatedo rèn luyện bản thân</h3>
+                            <p>Karatedo không chỉ là các bài quyền hay thế võ tự vệ, mà còn giúp mình rèn luyện sự dẻo dai, khỏe mạnh và tinh thần dũng cảm vượt qua khó khăn.</p>
+                            <div class="project-tags">
+                                <span>Karatedo</span>
+                                <span>Thể thao</span>
+                                <span>Võ thuật</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card card-glass fade-in-up" data-category="web" id="project-3">
+                        <div class="project-image-wrapper">
+                            <div class="project-visual-placeholder gradient-pastel-3">
+                                <i data-lucide="chef-hat" class="project-visual-icon"></i>
+                            </div>
+                            <span class="project-badge">Góc bếp nhỏ</span>
+                        </div>
+                        <div class="project-details">
+                            <h3>Khám phá các công thức bánh mới</h3>
+                            <p>Ngoài donut, mình cũng thích thử thách bản thân làm thêm cupcake, cookie và bánh mì ngọt để mời gia đình và các bạn cùng thưởng thức.</p>
+                            <div class="project-tags">
+                                <span>Bánh quy</span>
+                                <span>Cupcakes</span>
+                                <span>Vào bếp</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Kết nối</span>
+                    <h2 class="section-title">Nhắn Tin Cho Mình</h2>
+                    <p class="section-subtitle">Hãy gửi lời chào hoặc lời nhắn cho mình nhé.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Card -->
+                    <div class="contact-info-wrapper card-glass fade-in-up">
+                        <h3>Thông tin liên lạc</h3>
+                        <p class="info-desc">Mọi người có thể kết nối với mình qua các kênh dưới đây:</p>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon pink-bg"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <span>Gửi thư cho mình</span>
+                                    <a href="mailto:hello@hanhchi.me">hello@hanhchi.me</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon blue-bg"><i data-lucide="graduation-cap"></i></div>
+                                <div>
+                                    <span>Trường học</span>
+                                    <strong>THCS Tân Định, Hà Nội</strong>
+                                </div>
+                            </div>
+                            <div class="info-item" id="zalo-contact-item">
+                                <div class="info-icon green-bg"><i data-lucide="message-circle"></i></div>
+                                <div>
+                                    <span>Zalo của mình</span>
+                                    <a href="https://zalo.me/0945890620" target="_blank" id="zalo-link">0945 890 620</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-wrapper card-glass fade-in-up">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Họ và tên của bạn</label>
+                                <input type="text" id="contact-name" name="name" placeholder="Nguyễn Văn A" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Địa chỉ Email</label>
+                                <input type="email" id="contact-email" name="email" placeholder="example@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Lời nhắn cho Hạnh Chi</label>
+                                <textarea id="contact-message" name="message" rows="5" placeholder="Chào bạn, mình muốn làm quen..." required></textarea>
+                            </div>
+                            <button type="submit" id="contact-submit" class="btn btn-primary btn-block">
+                                Gửi lời nhắn <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Message Overlay -->
+                        <div class="form-success-overlay" id="form-success-overlay">
+                            <div class="success-content">
+                                <div class="success-icon-check"><i data-lucide="check"></i></div>
+                                <h3>Gửi tin nhắn thành công!</h3>
+                                <p>Cảm ơn bạn đã nhắn tin cho mình nha!</p>
+                                <button class="btn btn-primary btn-sm" id="btn-close-success">Gửi tin nhắn khác</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+        <div class="container footer-container">
+            <p class="copyright-text">&copy; 2026 Nguyễn Hạnh Chi. Thiết kế với sự tinh tế của bảng màu Pastel.</p>
+            <div class="footer-right">
+                <span>Made with ❤️ & JavaScript</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hamster Virtual Pet Widget -->
+    <div class="hamster-widget" id="hamster-pet">
+        <div class="hamster-bubble" id="hamster-bubble">Chít chít! Chào mừng bạn ghé thăm trang web của Hạnh Chi nhé! 🐹</div>
+        <div class="hamster-body-wrapper">
+            <img src="assets/hamster.jpg" alt="Cute Hamster" class="hamster-img" id="hamster-img-element">
+        </div>
+    </div>
+
+    <!-- Core App JS Link -->
+    <script src="app.js"></script>
+</body>
+</html>
