@@ -177,8 +177,8 @@
                             <span class="belt-badge-status">Hiện tại</span>
                         </div>
                         <div class="belt-step locked">
-                            <div class="belt-strip belt-orange"></div>
-                            <span class="belt-name">Đai Cam</span>
+                            <div class="belt-strip belt-lightblue"></div>
+                            <span class="belt-name">Đai Xanh dương nhạt</span>
                             <span class="belt-badge-status">Mục tiêu</span>
                         </div>
                         <div class="belt-step locked">
@@ -187,8 +187,8 @@
                             <span class="belt-badge-status">Mục tiêu</span>
                         </div>
                         <div class="belt-step locked">
-                            <div class="belt-strip belt-blue"></div>
-                            <span class="belt-name">Đai Xanh dương</span>
+                            <div class="belt-strip belt-bluish-purple"></div>
+                            <span class="belt-name">Đai Xanh tím</span>
                             <span class="belt-badge-status">Mục tiêu</span>
                         </div>
                         <div class="belt-step locked">
@@ -222,6 +222,91 @@
                         </div>
                         <div class="skill-tag" id="skill-team">
                             <i data-lucide="users" class="icon-db"></i> Thân thiện, hòa đồng
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Zone Section -->
+        <section class="game-section section" id="game-zone">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Thư giãn</span>
+                    <h2 class="section-title">Khu Vui Chơi Mini-Game 🎮</h2>
+                    <p class="section-subtitle">Chơi game vui vẻ để khám phá thêm những điều dễ thương cùng mình nhé!</p>
+                </div>
+
+                <div class="arcade-cabinet card-glass">
+                    <!-- Sidebar: Game Selector -->
+                    <div class="arcade-sidebar">
+                        <h4 class="sidebar-title">Chọn Trò Chơi</h4>
+                        <div class="game-selector-list">
+                            <button class="game-select-btn active" data-game="catcher">
+                                <span class="game-icon">🍩</span>
+                                <span class="game-title">Hứng Bánh Donut</span>
+                            </button>
+                            <button class="game-select-btn" data-game="memory">
+                                <span class="game-icon">🧩</span>
+                                <span class="game-title">Trí Nhớ Siêu Đẳng</span>
+                            </button>
+                            <button class="game-select-btn" data-game="karate">
+                                <span class="game-icon">🥋</span>
+                                <span class="game-title">Karate Chặt Gỗ</span>
+                            </button>
+                            <button class="game-select-btn" data-game="runner">
+                                <span class="game-icon">🐹</span>
+                                <span class="game-title">Hamster Chạy Bộ</span>
+                            </button>
+                            <button class="game-select-btn" data-game="tictactoe">
+                                <span class="game-icon">❌</span>
+                                <span class="game-title">Cờ Caro 3x3</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Main Arcade Screen -->
+                    <div class="arcade-main">
+                        <div class="game-header">
+                            <h3 id="current-game-title">Hứng Bánh Donut</h3>
+                            <div class="game-stats">
+                                <span class="stat-item">Điểm: <strong id="game-score">0</strong></span>
+                                <span class="stat-item">Điểm Cao: <strong id="game-highscore">0</strong></span>
+                                <span class="stat-item" id="game-timer-container">Thời gian: <strong id="game-timer">30</strong>s</span>
+                            </div>
+                        </div>
+
+                        <!-- Game Screen Container -->
+                        <div class="game-screen-wrapper" id="game-screen-wrapper">
+                            <!-- Canvas for Games -->
+                            <canvas id="game-canvas" width="600" height="400"></canvas>
+
+                            <!-- Custom HTML Overlays for non-canvas games or UI overlay -->
+                            <div class="game-overlay" id="game-overlay">
+                                <div class="overlay-content" id="overlay-content">
+                                    <h2 id="overlay-title">Hứng Bánh Donut</h2>
+                                    <p id="overlay-desc">Di chuyển chú Hamster để hứng donut rơi xuống, né tránh donut cháy màu đen nhé!</p>
+                                    <button class="btn btn-primary" id="start-game-btn">Bắt Đầu Chơi</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Touch Controls for Mobile Users -->
+                        <div class="mobile-game-controls" id="mobile-controls">
+                            <!-- Catcher controls -->
+                            <div class="control-group active" id="control-catcher">
+                                <button class="btn btn-secondary control-btn" id="btn-move-left">◀ Trái</button>
+                                <button class="btn btn-secondary control-btn" id="btn-move-right">Phải ▶</button>
+                            </div>
+                            <!-- Karate controls -->
+                            <div class="control-group" id="control-karate">
+                                <button class="btn btn-secondary control-btn" id="btn-chop-left">🥋 Trái</button>
+                                <button class="btn btn-secondary control-btn" id="btn-chop-right">Phải 🥋</button>
+                            </div>
+                            <!-- Runner controls -->
+                            <div class="control-group" id="control-runner">
+                                <button class="btn btn-primary control-btn" id="btn-jump">NHẢY 🚀</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -401,5 +486,7 @@
 
     <!-- Core App JS Link -->
     <script src="app.js"></script>
+    <!-- Mini Games Logic -->
+    <script src="games.js"></script>
 </body>
 </html>
